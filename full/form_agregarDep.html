@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Formulario de Empleados</title>
+	<title>Inicio</title>
 
 	<!-- Global stylesheets -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
@@ -350,6 +350,10 @@
 			</ul>
 		</div>
 	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page content -->
 	<div class="page-content">
 
 		<!-- Main sidebar -->
@@ -393,7 +397,10 @@
 						</div>
 					</div>
 				</div>
-								<!-- Main navigation -->
+				<!-- /user menu -->
+
+
+				<!-- Main navigation -->
 				<div class="card card-sidebar-mobile">
 					<ul class="nav nav-sidebar" data-nav-type="accordion">
 
@@ -411,7 +418,7 @@
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-user-tie"></i> <span>Empleados</span></a>
 
-							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
+							<ul class="nav nav-group-sub" data-submenu-title="layouts">
 								<li class="nav-item"><a href="../../../../layout_1/LTR/default/full/form_lista.html" class="nav-link active">Listado de Empleados</a></li>
 								<li class="nav-item"><a href="../../../../layout_1/LTR/default/full/form_empleados.html" class="nav-link active">Añadir Empleado</a></li>
 								<li class="nav-item"><a href="../../../../layout_1/LTR/default/full/form_actualizar.html" class="nav-link active">Actualizar el Listado Empleados</a></li>
@@ -428,7 +435,7 @@
 								<li class="nav-item"><a href="../../../../layout_1/LTR/default/full/form_actualizarDep.html" class="nav-link active">Actualizar Departamentos</a></li>
 							</ul>
 						</li>
-						<!-- Departamentos en el menu -->
+						<!-- /Departamentos en el menu -->
 						<!--
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-copy"></i> <span>Layouts</span></a>
@@ -442,6 +449,8 @@
 								<li class="nav-item"><a href="../../../../layout_6/LTR/default/full/index.html" class="nav-link disabled">Layout 6 <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
 						</li>
+					     -->
+						<!--
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-color-sampler"></i> <span>Themes</span></a>
 
@@ -452,6 +461,8 @@
 								<li class="nav-item"><a href="../../../LTR/clean/full/index.html" class="nav-link disabled">Clean <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
 						</li>
+					         -->
+					    <!--
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-stack"></i> <span>Starter kit</span></a>
 
@@ -496,7 +507,7 @@
 							</a>
 						</li>
 						<li class="nav-item"><a href="../../../RTL/default/full/index.html" class="nav-link"><i class="icon-width"></i> <span>RTL version</span></a></li>
-					-->
+					    -->
 						<!-- /main -->
 
 						<!-- Forms -->
@@ -555,7 +566,7 @@
 								<li class="nav-item"><a href="form_layout_horizontal_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
 						</li>
-					-->
+					    -->
 						<!-- /forms -->
 
 						<!-- Components -->
@@ -1243,7 +1254,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-user-tie mr-2"></i> <span class="font-weight-semibold">Empleados</span></h4>
+						<h4><i class="icon-office mr-2"></i> <span class="font-weight-semibold">Departamentos</span></h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>				
 				</div>
@@ -1251,8 +1262,8 @@
 				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex">
 						<div class="breadcrumb">
-							<a href="index.html" class="breadcrumb-item"><i class="icon-user-tie mr-2"></i>Empleados</a>
-							<span class="breadcrumb-item active">Añadir Empleados</span>
+							<a href="index.html" class="breadcrumb-item"><i class="icon-office mr-2"></i>Departamentos</a>
+							<span class="breadcrumb-item active">Agregar Departamento</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1263,10 +1274,10 @@
 
 		        <!-- Content area -->
 			<div class="content"> 
-				<!-- Formulario de Empleados -->
+				<!-- Formulario de Departamento -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Añadir Empleados</h5>
+						<h5 class="card-title">Agregar Departamentos</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1278,54 +1289,44 @@
 							<fieldset class="mb-3">
 
 								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Nombre/s:</label>
+									<label class="col-form-label col-lg-2">Clave:</label>
 									<div class="col-lg-10">
 										<input type="text" class="form-control">
 									</div>
 								</div>
 
 								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Apellido Paterno:</label>
+									<label class="col-form-label col-lg-2">Nombre:</label>
 									<div class="col-lg-10">
 										<input type="text" class="form-control">
 									</div>
 								</div>
 
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Apellido Materno:</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
 								<div class="form-group row">
 									<label class="col-form-label col-lg-2">Ciudad:</label>
 									<div class="col-lg-10">
 										<input type="text" class="form-control">
 									</div>
 								</div>
+
 								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Dirección:</label>
+									<label class="col-form-label col-lg-2">Telefono:</label>
 									<div class="col-lg-10">
 										<input type="text" class="form-control">
 									</div>
 								</div>
+
 								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Correo Electrónico:</label>
+									<label class="col-form-label col-lg-2">Correo:</label>
 									<div class="col-lg-10">
 										<input type="text" class="form-control">
 									</div>
-								</div>
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Teléfono:</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									<!-- </div> -->
 								</div>
 							</fieldset>
 							<div class="text-center">
 								<button type="submit" class="btn btn-primary">Registrar<i class="icon-paperplane ml-2"></i></button>
 							</div>
-							<!--/Formulario de empleados -->
+							<!--/Formulario de Departamento -->
 		        </div>
 		 </div>
 		</div>

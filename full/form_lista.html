@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Inicio</title>
+	<title>Listado de Empleados</title>
 
 	<!-- Global stylesheets -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
@@ -414,8 +414,9 @@
 								</span>
 							</a>
 						</li>
+						<!--Empleados en el Menu-->
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-menu"></i> <span>Empleados</span></a>
+							<a href="#" class="nav-link"><i class="icon-user-tie"></i> <span>Empleados</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="layouts">
 								<li class="nav-item"><a href="../../../../layout_1/LTR/default/full/form_lista.html" class="nav-link active">Listado de Empleados</a></li>
@@ -423,6 +424,18 @@
 								<li class="nav-item"><a href="../../../../layout_1/LTR/default/full/form_actualizar.html" class="nav-link active">Actualizar el Listado Empleados</a></li>
 							</ul>
 						</li>
+						<!--/Empleados en el Menu-->
+						<!-- Departamentos en el Menu -->
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-office"></i> <span>Departamentos</span></a>
+
+							<ul class="nav nav-group-sub" data-submenu-title="layouts">
+								<li class="nav-item"><a href="../../../../layout_1/LTR/default/full/form_listaDep.html" class="nav-link active">Listado de Departamentos</a></li>
+								<li class="nav-item"><a href="../../../../layout_1/LTR/default/full/form_agregarDep.html" class="nav-link active">Agregar Departamento</a></li>
+								<li class="nav-item"><a href="../../../../layout_1/LTR/default/full/form_actualizarDep.html" class="nav-link active">Actualizar Departamentos</a></li>
+							</ul>
+						</li>
+						<!-- Departamentos en el menu -->
 						<!--
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-copy"></i> <span>Layouts</span></a>
@@ -1241,7 +1254,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-menu mr-2"></i> <span class="font-weight-semibold">Empleados</span></h4>
+						<h4><i class="icon-user-tie mr-2"></i> <span class="font-weight-semibold">Empleados</span></h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>				
 				</div>
@@ -1249,7 +1262,7 @@
 				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex">
 						<div class="breadcrumb">
-							<a href="index.html" class="breadcrumb-item"><i class="icon-menu mr-2"></i>Empleados</a>
+							<a href="index.html" class="breadcrumb-item"><i class="icon-user-tie mr-2"></i>Empleados</a>
 							<span class="breadcrumb-item active">Listado de Empleados</span>
 						</div>
 
@@ -1257,6 +1270,7 @@
 					</div>
 
 		         </div>
+		         <!-- Tabla de Empleados -->
 		    	<div class="card">
 					<div class="card-header header-elements-inline">
 						<h5 class="card-title">Lista de Empleados</h5>
@@ -1285,109 +1299,111 @@
 							<tbody>
 								<tr>
 									<td>1</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<th></th>
-									<th></th>
-									<th></th>
-									<th></th>
+									<td>Irving Jael</td>
+									<td>Martinez</td>
+									<td>Aguilar</td>
+									<th>CD Victoria</th>
+									<th>Las Palomas #3022</th>
+									<th>irving_j_m@hotmail.com</th>
+									<th>8342680916</th>
 
 								</tr>
 								<tr>
 									<td>2</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<th></th>
-									<th></th>
-									<th></th>
-									<th></th>
+									<td>Jose Luis</td>
+									<td>Hernández</td>
+									<td>Ruíz</td>
+									<th>Tampico</th>
+									<th>La Montaña #234</th>
+									<th>joseHR@outlook.com</th>
+									<th>8331102546</th>
 								</tr>
 								<tr>
 									<td>3</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<th></th>
-									<th></th>
-									<th></th>
-									<th></th>
+									<td>Maria</td>
+									<td>Lopéz</td>
+									<td>Rodríguez</td>
+									<th>CD Victoria</th>
+									<th>Las Lomas #145</th>
+									<th>MariaLP@gmail.com</th>
+									<th>8345681245</th>
 								</tr>
 								<tr>
 									<td>4</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<th></th>
-									<th></th>
-									<th></th>
-									<th></th>
+									<td>Raul</td>
+									<td>Moreno</td>
+									<td>Ortiz</td>
+									<th>CD Victoria</th>
+									<th>Roma #1896</th>
+									<th>RMoreniOr@hotmail.com</th>
+									<th>8344566958</th>
 								</tr>
 								<tr>
 									<td>5</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<th></th>
-									<th></th>
-									<th></th>
-									<th></th>
+									<td>Mauricio</td>
+									<td>Chavez</td>
+									<td>Mata</td>
+									<th>CD Victoria</th>
+									<th>La Primavera #1456</th>
+									<th>MataChavez@hotmail.com</th>
+									<th>8341521225</th>
 								</tr>
 								<tr>
 									<td>6</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<th></th>
-									<th></th>
-									<th></th>
-									<th></th>
+									<td>Jesus</td>
+									<td>Aguilar</td>
+									<td>Medrano</td>
+									<th>CD Victoria</th>
+									<th>Aztecas #325</th>
+									<th>Jesus_AM@outlook.com</th>
+									<th>8341154578</th>
 								</tr>
 								<tr>
 									<td>7</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<th></th>
-									<th></th>
-									<th></th>
-									<th></th>
+									<td>Armando</td>
+									<td>Vega</td>
+									<td>Gomez</td>
+									<th>CD Victoria</th>
+									<th>Camino Nuevo #159</th>
+									<th>ArmandoVG@outlook.com</th>
+									<th>8345552630</th>
 								</tr>
 								<tr>
 									<td>8</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<th></th>
-									<th></th>
-									<th></th>
-									<th></th>
+									<td>Gabriela</td>
+									<td>Vasquez</td>
+									<td>Mota</td>
+									<th>CD Victoria</th>
+									<th>Las Villas #685</th>
+									<th>GMota@hotmail.com</th>
+									<th>8341002030</th>
 								</tr>
 								<tr>
 									<td>9</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<th></th>
-									<th></th>
-									<th></th>
-									<th></th>
+									<td>Guadalupe</td>
+									<td>Zuñiga</td>
+									<td>Varajas</td>
+									<th>CD Victoria</th>
+									<th>Loma Alta #753</th>
+									<th>GuadaZV@gmail.com</th>
+									<th>8342013064</th>
 								</tr>
 								<tr>
 									<td>10</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<th></th>
-									<th></th>
-									<th></th>
-									<th></th>
+									<td>Oscar</td>
+									<td>Rodrigez</td>
+									<td>Martínez</td>
+									<th>CD Victoria</th>
+									<th>Moderna #754</th>
+									<th>RodrigezOscar@outlook.com</th>
+									<th>8346596996</th>
 								</tr>
 							</tbody>
 						</table>
 		            </div>
 	        </div>
+	        <!-- /Tabla de emplados -->
+	        <!--
 	        <div class="card">
 					<div class="card-header header-elements-inline">
 						<h5 class="card-title">Empresas</h5>
@@ -1437,6 +1453,11 @@
 						</table>
 		        </div>
 		    </div>
+		-->
+
+
+		<!--DEPARTAMENTOS-->
+		<!--
 		    <div class="card">
 					<div class="card-header header-elements-inline">
 						<h5 class="card-title">Departamentos</h5>
@@ -1485,7 +1506,8 @@
 							</tbody>
 						</table>
 		        </div>	
-			</div>	    		
+			</div>	 
+			-->   		
 		<!-- /main content -->
 
 	</div>

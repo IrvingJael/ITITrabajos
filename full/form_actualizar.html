@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Inicio</title>
+	<title>Actualizar Lista de Emleados</title>
 
 	<!-- Global stylesheets -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
@@ -414,8 +414,9 @@
 								</span>
 							</a>
 						</li>
+						<!-- Empleados en el menu -->
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-menu"></i> <span>Empleados</span></a>
+							<a href="#" class="nav-link"><i class="icon-user-tie"></i> <span>Empleados</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="layouts">
 								<li class="nav-item"><a href="../../../../layout_1/LTR/default/full/form_lista.html" class="nav-link active">Listado de Empleados</a></li>
@@ -423,6 +424,18 @@
 								<li class="nav-item"><a href="../../../../layout_1/LTR/default/full/form_actualizar.html" class="nav-link active">Actualizar el Listado Empleados</a></li>
 							</ul>
 						</li>
+						<!-- /Empleados en el menu -->
+						<!-- Departamentos en el menu -->
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-office"></i> <span>Departamentos</span></a>
+
+							<ul class="nav nav-group-sub" data-submenu-title="layouts">
+								<li class="nav-item"><a href="../../../../layout_1/LTR/default/full/form_listaDep.html" class="nav-link active">Listado de Departamentos</a></li>
+								<li class="nav-item"><a href="../../../../layout_1/LTR/default/full/form_agregarDep.html" class="nav-link active">Agregar Departamento</a></li>
+								<li class="nav-item"><a href="../../../../layout_1/LTR/default/full/form_actualizarDep.html" class="nav-link active">Actualizar Departamentos</a></li>
+							</ul>
+						</li>
+						<!-- Departamento en el menu -->
 						<!--
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-copy"></i> <span>Layouts</span></a>
@@ -1241,7 +1254,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-menu mr-2"></i> <span class="font-weight-semibold">Empleados</span></h4>
+						<h4><i class="icon-user-tie mr-2"></i> <span class="font-weight-semibold">Empleados</span></h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>				
 				</div>
@@ -1249,7 +1262,7 @@
 				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex">
 						<div class="breadcrumb">
-							<a href="index.html" class="breadcrumb-item"><i class="icon-menu mr-2"></i>Empleados</a>
+							<a href="index.html" class="breadcrumb-item"><i class="icon-user-tie mr-2"></i>Empleados</a>
 							<span class="breadcrumb-item active">Actualizar</span>
 						</div>
 
@@ -1259,7 +1272,7 @@
 		         </div>
 		         <!--Contenido -->
 		         <div class="content"> 
-				<!-- Formulario de Empleados -->
+				<!-- Formulario de Actualizar Empleados -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
 						<h5 class="card-title">Actualizar lista de empleados</h5>
@@ -1275,59 +1288,59 @@
 								<div class="form-group row">
 									<label class="col-form-label col-lg-2">ID del empleado:</label>
 									<div class="col-lg-10">
-										<input type="text" class="form-control">
+										<input type="text" class="form-control" placeholder="1">
 									</div>
 								</div>
 
 								<div class="form-group row">
 									<label class="col-form-label col-lg-2">Nombre/s:</label>
 									<div class="col-lg-10">
-										<input type="text" class="form-control">
+										<input type="text" class="form-control" placeholder="IrvingJael">
 									</div>
 								</div>
 
 								<div class="form-group row">
 									<label class="col-form-label col-lg-2">Apellido Paterno:</label>
 									<div class="col-lg-10">
-										<input type="text" class="form-control">
+										<input type="text" class="form-control" placeholder="Martinez">
 									</div>
 								</div>
 
 								<div class="form-group row">
 									<label class="col-form-label col-lg-2">Apellido Materno:</label>
 									<div class="col-lg-10">
-										<input type="text" class="form-control">
+										<input type="text" class="form-control" placeholder="Aguilar">
 									</div>
 								</div>
 								<div class="form-group row">
 									<label class="col-form-label col-lg-2">Ciudad:</label>
 									<div class="col-lg-10">
-										<input type="text" class="form-control">
+										<input type="text" class="form-control" placeholder="CD Victoria">
 									</div>
 								</div>
 								<div class="form-group row">
 									<label class="col-form-label col-lg-2">Dirección:</label>
 									<div class="col-lg-10">
-										<input type="text" class="form-control">
+										<input type="text" class="form-control" placeholder="Fracc Las Palomas Paloma Morada #3022">
 									</div>
 								</div>
 								<div class="form-group row">
 									<label class="col-form-label col-lg-2">Correo Electrónico:</label>
 									<div class="col-lg-10">
-										<input type="text" class="form-control">
+										<input type="text" class="form-control" placeholder="irving_j_m@hotmail.com">
 									</div>
 								</div>
 								<div class="form-group row">
 									<label class="col-form-label col-lg-2">Teléfono:</label>
 									<div class="col-lg-10">
-										<input type="text" class="form-control">
+										<input type="text" class="form-control" placeholder="8342680916">
 									<!-- </div> -->
 								</div>
 							</fieldset>
 							<div class="text-center">
 								<button type="submit" class="btn btn-primary">Registrar<i class="icon-paperplane ml-2"></i></button>
 							</div>
-							<!--/Formulario de empleados -->
+							<!--/Formulario de Actualizar empleados -->
 		        </div>
 		 </div>
 		    		    		

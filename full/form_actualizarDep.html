@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Formulario de Empleados</title>
+	<title>Inicio</title>
 
 	<!-- Global stylesheets -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
@@ -350,6 +350,10 @@
 			</ul>
 		</div>
 	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page content -->
 	<div class="page-content">
 
 		<!-- Main sidebar -->
@@ -393,7 +397,10 @@
 						</div>
 					</div>
 				</div>
-								<!-- Main navigation -->
+				<!-- /user menu -->
+
+
+				<!-- Main navigation -->
 				<div class="card card-sidebar-mobile">
 					<ul class="nav nav-sidebar" data-nav-type="accordion">
 
@@ -411,7 +418,7 @@
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-user-tie"></i> <span>Empleados</span></a>
 
-							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
+							<ul class="nav nav-group-sub" data-submenu-title="layouts">
 								<li class="nav-item"><a href="../../../../layout_1/LTR/default/full/form_lista.html" class="nav-link active">Listado de Empleados</a></li>
 								<li class="nav-item"><a href="../../../../layout_1/LTR/default/full/form_empleados.html" class="nav-link active">Añadir Empleado</a></li>
 								<li class="nav-item"><a href="../../../../layout_1/LTR/default/full/form_actualizar.html" class="nav-link active">Actualizar el Listado Empleados</a></li>
@@ -442,6 +449,8 @@
 								<li class="nav-item"><a href="../../../../layout_6/LTR/default/full/index.html" class="nav-link disabled">Layout 6 <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
 						</li>
+					     -->
+						<!--
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-color-sampler"></i> <span>Themes</span></a>
 
@@ -452,6 +461,8 @@
 								<li class="nav-item"><a href="../../../LTR/clean/full/index.html" class="nav-link disabled">Clean <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
 						</li>
+					         -->
+					    <!--
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-stack"></i> <span>Starter kit</span></a>
 
@@ -496,7 +507,7 @@
 							</a>
 						</li>
 						<li class="nav-item"><a href="../../../RTL/default/full/index.html" class="nav-link"><i class="icon-width"></i> <span>RTL version</span></a></li>
-					-->
+					    -->
 						<!-- /main -->
 
 						<!-- Forms -->
@@ -555,7 +566,7 @@
 								<li class="nav-item"><a href="form_layout_horizontal_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
 						</li>
-					-->
+					    -->
 						<!-- /forms -->
 
 						<!-- Components -->
@@ -1243,7 +1254,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-user-tie mr-2"></i> <span class="font-weight-semibold">Empleados</span></h4>
+						<h4><i class="icon-office mr-2"></i> <span class="font-weight-semibold">Departamentos</span></h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>				
 				</div>
@@ -1251,83 +1262,361 @@
 				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex">
 						<div class="breadcrumb">
-							<a href="index.html" class="breadcrumb-item"><i class="icon-user-tie mr-2"></i>Empleados</a>
-							<span class="breadcrumb-item active">Añadir Empleados</span>
+							<a href="index.html" class="breadcrumb-item"><i class="icon-office mr-2"></i>Departamentos</a>
+							<span class="breadcrumb-item active">Actualizar Departamentos</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
 		         </div>
-		        <!-- /page header -->
-
-		        <!-- Content area -->
-			<div class="content"> 
-				<!-- Formulario de Empleados -->
-				<div class="card">
+		         <!-- Tabla para editar los campos -->
+		        <div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Añadir Empleados</h5>
+						<h5 class="card-title">Actualizar Departamentos</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>		              
 		                	</div>
 	                	</div>
 					</div>
-					<form action="#">
-							<fieldset class="mb-3">
+				<div class="table-responsive">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th></th>
+									<th>Clave</th>
+									<th>Nombre</th>
+									<th>Ciudad</th>
+									<th>Telefono</th>
+									<th>Correo</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>
+										<!-- Botones que abren los modales -->
+										<div class="list-icons">
+					                		<a href="#" class="list-icons-item text-primary 600" data-toggle="modal" data-target="#edit_modalA01" data-popup="tooltip" title="Editar" data-container="body">
+					                			<i class="icon-pencil7"></i>
+				                			</a>
+					                		<a href="#" class="list-icons-item text-danger 600" data-toggle="modal" data-target="#remove_modal" data-popup="tooltip" title="Eliminar" data-container="body">
+					                			<i class="icon-trash"></i>
+				                			</a>
+				                		</div>
+				                		<!-- /Botones que abren los modales -->
+				                		</th>
+									<td>A01</td>
+									<td>Direccion General</td>
+									<td>Cd Victoria</td>
+									<td>8341526985</td>
+									<td>DirecGen@gmail.com</td>
+								</tr>
+								<tr>
+									<th>
+										<!-- Botones que abren los modales -->
+										<div class="list-icons">
+					                		<a href="#" class="list-icons-item text-primary 600" data-toggle="modal" data-target="#edit_modalA02" data-popup="tooltip" title="Editar" data-container="body">
+					                			<i class="icon-pencil7"></i>
+				                			</a>
+					                		<a href="#" class="list-icons-item text-danger 600" data-toggle="modal" data-target="#remove_modal" data-popup="tooltip" title="Eliminar" data-container="body">
+					                			<i class="icon-trash"></i>
+				                			</a>
+				                		</div>
+				                		<!-- /Botones que abren los modales -->
+									</th>
+									<td>A02</td>
+									<td>Auxiliar Administrativo</td>
+									<td>Cd Victoria</td>
+									<td>8346989854</td>
+									<td>AuxAdmin@gmail.com</td>
+								</tr>
+								<tr>
+									<th>
+										<!-- Botones que abren los modales -->
+										<div class="list-icons">
+					                		<a href="#" class="list-icons-item text-primary 600" data-toggle="modal" data-target="#edit_modalA03" data-popup="tooltip" title="Editar" data-container="body">
+					                			<i class="icon-pencil7"></i>
+				                			</a>
+					                		<a href="#" class="list-icons-item text-danger 600" data-toggle="modal" data-target="#remove_modal" data-popup="tooltip" title="Eliminar" data-container="body">
+					                			<i class="icon-trash"></i>
+				                			</a>
+				                		</div>
+				                		<!-- /Botones que abren los modales -->
+									</th>
+									<td>A03</td>
+									<td>Administracion y Recursos Humanos</td>
+									<td>Cd Victoria</td>
+									<td>8341222001</td>
+									<td>AdminRecursos@gmail.com</td>
+								</tr>
+								<tr>
+									<th>
+										<!-- Botones que abren los modales -->
+										<div class="list-icons">
+					                		<a href="#" class="list-icons-item text-primary 600" data-toggle="modal" data-target="#edit_modalA04" data-popup="tooltip" title="Editar" data-container="body">
+					                			<i class="icon-pencil7"></i>
+				                			</a>
+					                		<a href="#" class="list-icons-item text-danger 600" data-toggle="modal" data-target="#remove_modal" data-popup="tooltip" title="Eliminar" data-container="body">
+					                			<i class="icon-trash"></i>
+				                			</a>
+				                		</div>
+				                		<!-- /Botones que abren los modales -->
+									</th>
+									<td>A04</td>
+									<td>Finanzas</td>
+									<td>Cd Victoria</td>
+									<td>8340123006</td>
+									<td>Finan@gmail.com</td>
+								</tr>
+								<tr>
+									<th>
+										<!-- Botones que abren los modales -->
+										<div class="list-icons">
+					                		<a href="#" class="list-icons-item text-primary 600" data-toggle="modal" data-target="#edit_modalA05" data-popup="tooltip" title="Editar" data-container="body">
+					                			<i class="icon-pencil7"></i>
+				                			</a>
+					                		<a href="#" class="list-icons-item text-danger 600" data-toggle="modal" data-target="#remove_modal" data-popup="tooltip" title="Eliminar" data-container="body">
+					                			<i class="icon-trash"></i>
+				                			</a>
+				                		</div>
+				                		<!-- /Botones que abren los modales -->
+									</th>
+									<td>A05</td>
+									<td>Publicidad</td>
+									<td>Cd Victoria</td>
+									<td>8341050809</td>
+									<td>Publi@gmail.com</td>
+								</tr>
+							</tbody>
+						</table>
+		        </div>	
+			</div> 
+			<!-- /Tabla para editar los campos -->
 
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Nombre/s:</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Apellido Paterno:</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Apellido Materno:</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Ciudad:</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Dirección:</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Correo Electrónico:</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									</div>
-								</div>
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Teléfono:</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control">
-									<!-- </div> -->
-								</div>
-							</fieldset>
-							<div class="text-center">
-								<button type="submit" class="btn btn-primary">Registrar<i class="icon-paperplane ml-2"></i></button>
+			<!-- Modales de Edicion -->
+		    <div id="edit_modalA01" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header bg-transparent">
+								<h5 class="modal-title">Tabla de Editar</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
 							</div>
-							<!--/Formulario de empleados -->
-		        </div>
-		 </div>
-		</div>
-	</body>
+
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Clave</th>
+											<th>Nombre</th>
+											<th>Ciudad</th>
+											<th>Telefono</th>
+											<th>Correo</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><input type="text" class="form-control" value="A01"></td>
+											<td><input type="text" class="form-control" value="Direccion General"></td>
+											<td><input type="text" class="form-control" value="Cd Victoria"></td>
+											<td><input type="text" class="form-control" value="8341526985"></td>
+											<td><input type="text" class="form-control" value="DirecGen@gmail.com"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="modal-footer bg-transparent">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Cerrar</button>
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Salvar Cambios</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="edit_modalA02" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header bg-transparent">
+								<h5 class="modal-title">Tabla de Editar</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Clave</th>
+											<th>Nombre</th>
+											<th>Ciudad</th>
+											<th>Telefono</th>
+											<th>Correo</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><input type="text" class="form-control" value="A02"></td>
+											<td><input type="text" class="form-control" value="Auxiliar Administrativo"></td>
+											<td><input type="text" class="form-control" value="Cd Victoria"></td>
+											<td><input type="text" class="form-control" value="8346989854"></td>
+											<td><input type="text" class="form-control" value="AuxAdmin@gmail.com"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="modal-footer bg-transparent">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Cerrar</button>
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Salvar Cambios</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+                <div id="edit_modalA03" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header bg-transparent">
+								<h5 class="modal-title">Tabla de Editar</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Clave</th>
+											<th>Nombre</th>
+											<th>Ciudad</th>
+											<th>Telefono</th>
+											<th>Correo</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><input type="text" class="form-control" value="A03"></td>
+											<td><input type="text" class="form-control" value="Administracion y Recursos Humanos"></td>
+											<td><input type="text" class="form-control" value="Cd Victoria"></td>
+											<td><input type="text" class="form-control" value="8341222001"></td>
+											<td><input type="text" class="form-control" value="AdminRecursos@gmail.com"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="modal-footer bg-transparent">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Cerrar</button>
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Salvar Cambios</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="edit_modalA04" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header bg-transparent">
+								<h5 class="modal-title">Tabla de Editar</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Clave</th>
+											<th>Nombre</th>
+											<th>Ciudad</th>
+											<th>Telefono</th>
+											<th>Correo</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><input type="text" class="form-control" value="A04"></td>
+											<td><input type="text" class="form-control" value="Finanzas"></td>
+											<td><input type="text" class="form-control" value="Cd Victoria"></td>
+											<td><input type="text" class="form-control" value="8340123006"></td>
+											<td><input type="text" class="form-control" value="Finan@gmail.com"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="modal-footer bg-transparent">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Cerrar</button>
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Salvar Cambios</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="edit_modalA05" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header bg-transparent">
+								<h5 class="modal-title">Tabla de Editar</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Clave</th>
+											<th>Nombre</th>
+											<th>Ciudad</th>
+											<th>Telefono</th>
+											<th>Correo</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><input type="text" class="form-control" value="A05"></td>
+											<td><input type="text" class="form-control" value="Publicidad"></td>
+											<td><input type="text" class="form-control" value="Cd Victoria"></td>
+											<td><input type="text" class="form-control" value="8341050809"></td>
+											<td><input type="text" class="form-control" value="Publi@gmail.com"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="modal-footer bg-transparent">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Cerrar</button>
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Salvar Cambios</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Modales de Edicion -->
+
+				<!-- Modal de Eliminar -->
+				<div id="remove_modal" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Confirmar Acción</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								Se eliminara lo seleccionado, ¿Esta seguro de eso?
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Si, Eliminar</button>
+								<button type="button" class="btn btn-light" data-dismiss="modal">No, Gracias</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Modal de Eliminar-->
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
 </html>
