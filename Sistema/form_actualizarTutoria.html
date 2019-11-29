@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Listado de Empleados</title>
+	<title>Actualizar listado de tutorias</title>
 
 	<!-- Global stylesheets -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
@@ -18,6 +18,7 @@
 
 	<!-- Core JS files -->
 	<script src="../global_assets/js/main/jquery.min.js"></script>
+	<script src="../global_assets/js/plugins/extensions/jquery_ui/widgets.min.js"></script>
 	<script src="../global_assets/js/main/bootstrap.bundle.min.js"></script>
 	<script src="../global_assets/js/plugins/loaders/blockui.min.js"></script>
 	<!-- /core JS files -->
@@ -414,7 +415,6 @@
 								</span>
 							</a>
 						</li>
-						<!--Empleados en el Menu-->
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-user-tie"></i> <span>Empleados</span></a>
 
@@ -424,8 +424,6 @@
 								<li class="nav-item"><a href="../Sistema/form_actualizar.html" class="nav-link active">Actualizar el Listado Empleados</a></li>
 							</ul>
 						</li>
-						<!--/Empleados en el Menu-->
-						<!-- Departamentos en el Menu -->
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-office"></i> <span>Departamentos</span></a>
 
@@ -466,7 +464,7 @@
 							<ul class="nav nav-group-sub" data-submenu-title="layouts">
 								<li class="nav-item"><a href="../Sistema/form_listaAlumnos.html" class="nav-link active">Lista de alumnos</a></li>
 								<li class="nav-item"><a href="../Sistema/form_agregarAlumnos.html" class="nav-link active">Agregar alumnos</a></li>
-								<li class="nav-item"><a href="../Sistema/form_actualizarAlumnos.html" class="nav-link active">Actualizar alumnos</a></li>
+								<li class="nav-item"><a href="../Sistema/form_actualizarAlumnos.html" class="nav-link active">Actualizar Lista de Alumnos</a></li>
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
@@ -478,7 +476,6 @@
 								<li class="nav-item"><a href="../Sistema/form_actualizarTutoria.html" class="nav-link active">Actualizar Lista de Tutorias</a></li>
 							</ul>
 						</li>
-						<!-- Departamentos en el menu -->
 						<!--
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-copy"></i> <span>Layouts</span></a>
@@ -1297,7 +1294,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-user-tie mr-2"></i> <span class="font-weight-semibold">Empleados</span></h4>
+						<h4><i class="icon-direction mr-2"></i> <span class="font-weight-semibold">Tutorias</span></h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>				
 				</div>
@@ -1305,205 +1302,17 @@
 				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex">
 						<div class="breadcrumb">
-							<a href="index.html" class="breadcrumb-item"><i class="icon-user-tie mr-2"></i>Empleados</a>
-							<span class="breadcrumb-item active">Listado de Empleados</span>
+							<a href="index.html" class="breadcrumb-item"><i class="icon-direction mr-2"></i>Tutorias</a>
+							<span class="breadcrumb-item active">Actualizar Listado de Tutorias</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
-
 		         </div>
-		         <!-- Tabla de Empleados -->
-		    	<div class="card">
+		          <!-- Tabla para editar los campos -->
+		        <div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Lista de Empleados</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>		              
-		                	</div>
-	                	</div>
-					</div>
-     
-		         <div class="table-responsive">
-						<table class="table">
-							<thead>
-								<tr>
-									<th>ID</th>
-									<th>Nombre/s</th>
-									<th>Apellido Paterno</th>
-									<th>Apellido Materno</th>
-									<th>Ciudad</th>
-									<th>Dirección</th>
-									<th>Correo electrónico</th>
-									<th>Teléfono</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>1</td>
-									<td>Irving Jael</td>
-									<td>Martinez</td>
-									<td>Aguilar</td>
-									<th>CD Victoria</th>
-									<th>Las Palomas #3022</th>
-									<th>irving_j_m@hotmail.com</th>
-									<th>8342680916</th>
-
-								</tr>
-								<tr>
-									<td>2</td>
-									<td>Jose Luis</td>
-									<td>Hernández</td>
-									<td>Ruíz</td>
-									<th>Tampico</th>
-									<th>La Montaña #234</th>
-									<th>joseHR@outlook.com</th>
-									<th>8331102546</th>
-								</tr>
-								<tr>
-									<td>3</td>
-									<td>Maria</td>
-									<td>Lopéz</td>
-									<td>Rodríguez</td>
-									<th>CD Victoria</th>
-									<th>Las Lomas #145</th>
-									<th>MariaLP@gmail.com</th>
-									<th>8345681245</th>
-								</tr>
-								<tr>
-									<td>4</td>
-									<td>Raul</td>
-									<td>Moreno</td>
-									<td>Ortiz</td>
-									<th>CD Victoria</th>
-									<th>Roma #1896</th>
-									<th>RMoreniOr@hotmail.com</th>
-									<th>8344566958</th>
-								</tr>
-								<tr>
-									<td>5</td>
-									<td>Mauricio</td>
-									<td>Chavez</td>
-									<td>Mata</td>
-									<th>CD Victoria</th>
-									<th>La Primavera #1456</th>
-									<th>MataChavez@hotmail.com</th>
-									<th>8341521225</th>
-								</tr>
-								<tr>
-									<td>6</td>
-									<td>Jesus</td>
-									<td>Aguilar</td>
-									<td>Medrano</td>
-									<th>CD Victoria</th>
-									<th>Aztecas #325</th>
-									<th>Jesus_AM@outlook.com</th>
-									<th>8341154578</th>
-								</tr>
-								<tr>
-									<td>7</td>
-									<td>Armando</td>
-									<td>Vega</td>
-									<td>Gomez</td>
-									<th>CD Victoria</th>
-									<th>Camino Nuevo #159</th>
-									<th>ArmandoVG@outlook.com</th>
-									<th>8345552630</th>
-								</tr>
-								<tr>
-									<td>8</td>
-									<td>Gabriela</td>
-									<td>Vasquez</td>
-									<td>Mota</td>
-									<th>CD Victoria</th>
-									<th>Las Villas #685</th>
-									<th>GMota@hotmail.com</th>
-									<th>8341002030</th>
-								</tr>
-								<tr>
-									<td>9</td>
-									<td>Guadalupe</td>
-									<td>Zuñiga</td>
-									<td>Varajas</td>
-									<th>CD Victoria</th>
-									<th>Loma Alta #753</th>
-									<th>GuadaZV@gmail.com</th>
-									<th>8342013064</th>
-								</tr>
-								<tr>
-									<td>10</td>
-									<td>Oscar</td>
-									<td>Rodrigez</td>
-									<td>Martínez</td>
-									<th>CD Victoria</th>
-									<th>Moderna #754</th>
-									<th>RodrigezOscar@outlook.com</th>
-									<th>8346596996</th>
-								</tr>
-							</tbody>
-						</table>
-		            </div>
-	        </div>
-	        <!-- /Tabla de emplados -->
-	        <!--
-	        <div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Empresas</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>		              
-		                	</div>
-	                	</div>
-					</div>
-		       <div class="table-responsive">
-						<table class="table table-striped">
-							<thead>
-								<tr>
-									<th>#</th>
-									<th>Nombre</th>
-									<th>Clave</th>
-									<th>Dirección</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>1</td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>2</td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>3</td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>4</td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-							</tbody>
-						</table>
-		        </div>
-		    </div>
-		-->
-
-
-		<!--DEPARTAMENTOS-->
-		<!--
-		    <div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Departamentos</h5>
+						<h5 class="card-title">Actualizar Listado De Tutorias</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1515,42 +1324,401 @@
 						<table class="table table-striped">
 							<thead>
 								<tr>
-									<th>#</th>
-									<th>Nombre</th>
-									<th>Clave</th>
-									<th>Descripción</th>
+									<th></th>
+									<th>ID</th>
+									<th>Alumno</th>
+									<th>Matricula</th>
+									<th>Carrera</th>
+									<th>Empleado</th>
+									<th>ID del Empleado</th>
+									<th>Departamento</th>
+									<th>Fecha</th>
+									<th>Tema Atendido</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
-									<td>1</td>
-									<td></td>
-									<td></td>
-									<td></td>
+									<th>
+										<!-- Botones que abren los modales -->
+										<div class="list-icons">
+					                		<a href="#" class="list-icons-item text-primary 600" data-toggle="modal" data-target="#edit_modalA01" data-popup="tooltip" title="Editar" data-container="body">
+					                			<i class="icon-pencil7"></i>
+				                			</a>
+					                		<a href="#" class="list-icons-item text-danger 600" data-toggle="modal" data-target="#remove_modal" data-popup="tooltip" title="Eliminar" data-container="body">
+					                			<i class="icon-trash"></i>
+				                			</a>
+				                		</div>
+				                		<!-- /Botones que abren los modales -->
+				                	</th>
+									<th>1</th>
+									<th>Mario Perez</th>
+									<th>1930152</th>
+									<th>ITI</th>
+									<th>Irving Jael</th>
+									<th>1</th>
+									<th>Direccion General</th>
+									<th>20 de Octubre de 2019</th>
+									<th>Residencias</th>
 								</tr>
 								<tr>
-									<td>2</td>
-									<td></td>
-									<td></td>
-									<td></td>
+									<th>
+										<!-- Botones que abren los modales -->
+										<div class="list-icons">
+					                		<a href="#" class="list-icons-item text-primary 600" data-toggle="modal" data-target="#edit_modalA02" data-popup="tooltip" title="Editar" data-container="body">
+					                			<i class="icon-pencil7"></i>
+				                			</a>
+					                		<a href="#" class="list-icons-item text-danger 600" data-toggle="modal" data-target="#remove_modal" data-popup="tooltip" title="Eliminar" data-container="body">
+					                			<i class="icon-trash"></i>
+				                			</a>
+				                		</div>
+				                		<!-- /Botones que abren los modales -->
+									</th>
+									<th>2</th>
+									<th>Juan Balboa</th>
+									<th>1930698</th>
+									<th>ISA</th>
+									<th>Maria Lopez</th>
+									<th>3</th>
+									<th>Administracion y Recursos Humanos</th>
+									<th>14 de Octubre de 2019 </th>
+									<th>Drogadiccion</th>
 								</tr>
 								<tr>
-									<td>3</td>
-									<td></td>
-									<td></td>
-									<td></td>
+									<th>
+										<!-- Botones que abren los modales -->
+										<div class="list-icons">
+					                		<a href="#" class="list-icons-item text-primary 600" data-toggle="modal" data-target="#edit_modalA03" data-popup="tooltip" title="Editar" data-container="body">
+					                			<i class="icon-pencil7"></i>
+				                			</a>
+					                		<a href="#" class="list-icons-item text-danger 600" data-toggle="modal" data-target="#remove_modal" data-popup="tooltip" title="Eliminar" data-container="body">
+					                			<i class="icon-trash"></i>
+				                			</a>
+				                		</div>
+				                		<!-- /Botones que abren los modales -->
+									</th>
+									<th>3</th>
+									<th>Luis Medrano</th>
+									<th>1930456</th>
+									<th>MANU</th>
+									<th>Guadalupe Zuñiga</th>
+									<th>9</th>
+									<th>Administracion y Recursos Humanos</th>
+									<th>10 de Agosto de 2019</th>
+									<th>Problemas Familiares</th>
 								</tr>
 								<tr>
-									<td>4</td>
-									<td></td>
-									<td></td>
-									<td></td>
+									<th>
+										<!-- Botones que abren los modales -->
+										<div class="list-icons">
+					                		<a href="#" class="list-icons-item text-primary 600" data-toggle="modal" data-target="#edit_modalA04" data-popup="tooltip" title="Editar" data-container="body">
+					                			<i class="icon-pencil7"></i>
+				                			</a>
+					                		<a href="#" class="list-icons-item text-danger 600" data-toggle="modal" data-target="#remove_modal" data-popup="tooltip" title="Eliminar" data-container="body">
+					                			<i class="icon-trash"></i>
+				                			</a>
+				                		</div>
+				                		<!-- /Botones que abren los modales -->
+									</th>
+									<th>4</th>
+									<th>Emilio Chavez</th>
+									<th>1930304</th>
+									<th>PYMES</th>
+									<th>Gabriela Vasquez</th>
+									<th>8</th>
+									<th>Administracion y Recursos Humanos</th>
+									<th>5 de junio de 2019</th>
+									<th>Problemas de Salud</th>
+								</tr>
+								<tr>
+									<th>
+										<!-- Botones que abren los modales -->
+										<div class="list-icons">
+					                		<a href="#" class="list-icons-item text-primary 600" data-toggle="modal" data-target="#edit_modalA05" data-popup="tooltip" title="Editar" data-container="body">
+					                			<i class="icon-pencil7"></i>
+				                			</a>
+					                		<a href="#" class="list-icons-item text-danger 600" data-toggle="modal" data-target="#remove_modal" data-popup="tooltip" title="Eliminar" data-container="body">
+					                			<i class="icon-trash"></i>
+				                			</a>
+				                		</div>
+				                		<!-- /Botones que abren los modales -->
+									</th>
+									<th>5</th>
+									<th>Hannia Martinez</th>
+									<th>1930487</th>
+									<th>MECA</th>
+									<th>Raul Moreno</th>
+									<th>4</th>
+									<th>Finanzas</th>
+									<th>28 de Febrero de 2019</th>
+									<th>Inversion y Riesgo capital</th>
 								</tr>
 							</tbody>
 						</table>
 		        </div>	
-			</div>	 
-			-->   		
+			</div> 
+			<!-- /Tabla para editar los campos -->
+
+			<!-- Modales de Edicion -->
+		    <div id="edit_modalA01" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header bg-transparent">
+								<h5 class="modal-title">Tabla de Editar</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+										<tr>
+										 <th>ID</th>
+									     <th>Alumno</th>
+									     <th>Matricula</th>
+									     <th>Carrera</th>
+									     <th>Empleado</th>
+									     <th>ID del Empleado</th>
+									     <th>Departamento</th>
+								 	     <th>Fecha</th>
+									     <th>Tema Atendido</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><input type="text" class="form-control" value="1"></td>
+											<td><input type="text" class="form-control" value="Mario Perez"></td>
+											<td><input type="text" class="form-control" value="1930152"></td>
+											<td><input type="text" class="form-control" value="ITI"></td>
+											<td><input type="text" class="form-control" value="Irving Jael"></td>
+											<td><input type="text" class="form-control" value="1"></td>
+											<td><input type="text" class="form-control" value="Direccion General"></td>
+											<td><input type="text" class="form-control" value="20 de Octubre de 2019"></td>
+											<td><input type="text" class="form-control" value="Residencias"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="modal-footer bg-transparent">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Cerrar</button>
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Salvar Cambios</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="edit_modalA02" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header bg-transparent">
+								<h5 class="modal-title">Tabla de Editar</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+										<tr>
+									     <th>ID</th>
+									     <th>Alumno</th>
+									     <th>Matricula</th>
+									     <th>Carrera</th>
+									     <th>Empleado</th>
+									     <th>ID del Empleado</th>
+									     <th>Departamento</th>
+								 	     <th>Fecha</th>
+									     <th>Tema Atendido</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><input type="text" class="form-control" value="2"></td>
+											<td><input type="text" class="form-control" value="Juan Balboa"></td>
+											<td><input type="text" class="form-control" value="1930698"></td>
+											<td><input type="text" class="form-control" value="ISA"></td>
+											<td><input type="text" class="form-control" value="Maria Lopez"></td>
+											<td><input type="text" class="form-control" value="3"></td>
+											<td><input type="text" class="form-control" value="Administracion y Recursos Humanos"></td>
+											<td><input type="text" class="form-control" value="14 de Octubre de 2019"></td>
+											<td><input type="text" class="form-control" value="Drogadiccion"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="modal-footer bg-transparent">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Cerrar</button>
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Salvar Cambios</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+                <div id="edit_modalA03" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header bg-transparent">
+								<h5 class="modal-title">Tabla de Editar</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+										<tr>
+									     <th>ID</th>
+									     <th>Alumno</th>
+									     <th>Matricula</th>
+									     <th>Carrera</th>
+									     <th>Empleado</th>
+									     <th>ID del Empleado</th>
+									     <th>Departamento</th>
+								 	     <th>Fecha</th>
+									     <th>Tema Atendido</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><input type="text" class="form-control" value="3"></td>
+											<td><input type="text" class="form-control" value="Luis Medrano"></td>
+											<td><input type="text" class="form-control" value="1930456"></td>
+											<td><input type="text" class="form-control" value="MANU"></td>
+											<td><input type="text" class="form-control" value="Guadalupe Zuñiga"></td>
+											<td><input type="text" class="form-control" value="9"></td>
+											<td><input type="text" class="form-control" value="Administracion y Recursos Humanos"></td>
+											<td><input type="text" class="form-control" value="10 de Agosto de 2019"></td>
+											<td><input type="text" class="form-control" value="Problemas Familiares"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="modal-footer bg-transparent">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Cerrar</button>
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Salvar Cambios</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="edit_modalA04" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header bg-transparent">
+								<h5 class="modal-title">Tabla de Editar</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+										<tr>
+									     <th>ID</th>
+									     <th>Alumno</th>
+									     <th>Matricula</th>
+									     <th>Carrera</th>
+									     <th>Empleado</th>
+									     <th>ID del Empleado</th>
+									     <th>Departamento</th>
+								 	     <th>Fecha</th>
+									     <th>Tema Atendido</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><input type="text" class="form-control" value="4"></td>
+											<td><input type="text" class="form-control" value="Emilio Chavez"></td>
+											<td><input type="text" class="form-control" value="1930304"></td>
+											<td><input type="text" class="form-control" value="PYMES"></td>
+											<td><input type="text" class="form-control" value="Gabriela Vasquez"></td>
+											<td><input type="text" class="form-control" value="8"></td>
+											<td><input type="text" class="form-control" value="Administracion y Recursos Humanos"></td>
+											<td><input type="text" class="form-control" value="5 de junio de 2019"></td>
+											<td><input type="text" class="form-control" value="Problemas de Salud"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="modal-footer bg-transparent">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Cerrar</button>
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Salvar Cambios</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="edit_modalA05" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header bg-transparent">
+								<h5 class="modal-title">Tabla de Editar</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+										<tr>
+										 <th>ID</th>
+									     <th>Alumno</th>
+									     <th>Matricula</th>
+									     <th>Carrera</th>
+									     <th>Empleado</th>
+									     <th>ID del Empleado</th>
+									     <th>Departamento</th>
+								 	     <th>Fecha</th>
+									     <th>Tema Atendido</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><input type="text" class="form-control" value="5"></td>
+											<td><input type="text" class="form-control" value="Hannia Martinez"></td>
+											<td><input type="text" class="form-control" value="1930487"></td>
+											<td><input type="text" class="form-control" value="MECA"></td>
+											<td><input type="text" class="form-control" value="Raul Moreno"></td>
+											<td><input type="text" class="form-control" value="4"></td>
+											<td><input type="text" class="form-control" value="Finanzas"></td>
+											<td><input type="text" class="form-control" value="28 de Febrero de 2019"></td>
+											<td><input type="text" class="form-control" value="Inversion y Riesgo capital"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="modal-footer bg-transparent">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Cerrar</button>
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Salvar Cambios</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Modales de Edicion -->
+
+				<!-- Modal de Eliminar -->
+				<div id="remove_modal" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Confirmar Acción</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								Se eliminara lo seleccionado, ¿Esta seguro de eso?
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Si, Eliminar</button>
+								<button type="button" class="btn btn-light" data-dismiss="modal">No, Gracias</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="text-center">
+						<a href="form_agregarTutoria.html" type="submit" class="btn btn-primary">Agregar Tutoria<i class="icon-pencil ml-2"></i></a>
+				</div>
+				<!-- /Modal de Eliminar-->	    		
 		<!-- /main content -->
 
 	</div>
